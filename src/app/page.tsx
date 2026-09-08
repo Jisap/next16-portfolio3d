@@ -1,3 +1,4 @@
+import AboutSection from '@/components/AboutSection'
 import HeroSection from '@/components/HeroSection'
 import ParticleCanvas from '@/components/ParticleCanvas'
 import ScrollImageSequence from '@/components/ScrollImageSequence'
@@ -10,6 +11,7 @@ const Home = () => {
         <ScrollImageSequence />
         <ParticleCanvas />
         <HeroSection />
+        <AboutSection />
       </div>
     </>
   )
