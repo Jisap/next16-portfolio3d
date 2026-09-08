@@ -11,7 +11,7 @@ if (typeof window !== "undefined") {
 
 interface ScrollRevealTextProps {
   children: React.ReactNode;
-  triggerRef: React.RefObject<HTMLElement | null>;
+  triggerRef?: React.RefObject<HTMLElement | null>;
   triggerStart?: string;
   triggerEnd?: string;
   toggleActions?: string;
