@@ -14,44 +14,55 @@ interface ScrollRevealTextProps {
   triggerRef: React.RefObject<HTMLElement | null>;
   triggerStart?: string;
   triggerEnd?: string;
+  toggleActions?: string;
+  once?: boolean;
+  stagger?: number;                                                     // Retraso entre cada letra en segundos
+  duration?: number;                                                    // Duración de la animación de cada letra
 }
 
 const ScrollRevealText = ({
   children,
   triggerRef,
   triggerStart = "top 85%",
-  triggerEnd = "top 40%",
+  triggerEnd = "bottom 20%",
+  toggleActions = "play reverse play reverse",
+  once = false,
+  stagger = 0.045,                                                      // 0.045s entre letras para efecto cascada fluido y visible
+  duration = 0.6,
 }: ScrollRevealTextProps) => {
 
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    if (!wrapperRef.current || !triggerRef.current) return;              // Si no hay ref, no hay animación
+    if (!wrapperRef.current) return;
 
     const chars = wrapperRef.current.querySelectorAll(".char-span");     // Selecciona todos los elementos con la clase "char-span"
     if (chars.length === 0) return;                                      // Si no hay elementos, no hay animación
 
-    gsap.set(chars, { yPercent: 100, opacity: 0 });                      // Estado inicial: ocultos y desplazados
+    const targetTrigger = (triggerRef && triggerRef.current) ? triggerRef.current : wrapperRef.current;
 
-    const st = ScrollTrigger.create({                                    // Crea un ScrollTrigger
-      trigger: triggerRef.current,                                       // Elemento que activa la animación
-      start: triggerStart,                                               // Posición de inicio (cuando el trigger entra en el viewport)
-      end: triggerEnd,                                                   // Posición de fin (cuando el trigger sale del viewport)
-      once: true,                                                        // La animación solo se ejecuta una vez
-      onEnter: () => {                                                   // Función que se ejecuta cuando el trigger entra en el viewport
-        gsap.to(chars, {                                                    // Animación de los caracteres
-          yPercent: 0,                                                      // Vuelve a la posición original
-          opacity: 1,                                                       // Se vuelve visible
-          duration: 0.7,                                                    // Duración de la animación
-          ease: "power3.out",                                               // Curva de aceleración
-          stagger: (i, target) =>                                                     // Retraso entre caracteres
-            0.03 * parseFloat(target.getAttribute("data-delay") || "0") + i * 0.008,  // Calcula el retraso para cada caracter
-        });
+    gsap.fromTo(
+      chars,
+      {
+        yPercent: 100,                                                   // Estado inicial: desplazado hacia abajo
+        opacity: 0,                                                      // Estado inicial: transparente
       },
-    });
-
-    return () => st.kill();                                            // Limpia el ScrollTrigger cuando el componente se desmonta
-  }, []);
+      {
+        yPercent: 0,                                                     // Estado final: posición original
+        opacity: 1,                                                      // Estado final: visible
+        duration,                                                        // Duración de la animación de cada letra
+        ease: "power3.out",                                              // Curva de aceleración
+        stagger,                                                         // Escalón de tiempo perceptible entre letras
+        scrollTrigger: {
+          trigger: targetTrigger,                                        // Elemento que activa la animación
+          start: triggerStart,                                           // Posición de inicio
+          end: triggerEnd,                                               // Posición de fin
+          once,                                                          // Si solo se ejecuta una vez
+          toggleActions: once ? undefined : toggleActions,               // Acciones de reproducción / reversión
+        },
+      }
+    );
+  }, { scope: wrapperRef, dependencies: [triggerRef, triggerStart, triggerEnd, toggleActions, once, stagger, duration] });
 
   return <div ref={wrapperRef}>{children}</div>;                      // Retorna el wrapper con los caracteres
 }
