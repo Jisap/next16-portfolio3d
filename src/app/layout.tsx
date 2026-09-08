@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { AppProvider } from "./context/AppContext";
 import TransitionRouter from "@/components/TransitionRouter";
 import LoadingScreen from "@/components/LoadingScreen";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ayushagarwal.dev"),
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <AppProvider>
           <TransitionRouter>
+            <Navbar />
             <LoadingScreen>{children}</LoadingScreen>
           </TransitionRouter>
         </AppProvider>

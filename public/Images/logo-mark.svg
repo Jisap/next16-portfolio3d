@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" fill="none" width="100%" height="100%">
+  <!-- Left Chevron / Triangle Indicator -->
+  <polygon points="20,25 65,55 20,85" fill="#f93434" />
+  
+  <!-- "AKA" Text Monogram -->
+  <text x="85" y="76" fill="#f2f2f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="4">AKA</text>
+  
+  <!-- Accent underline -->
+  <rect x="85" y="94" width="180" height="7" rx="3.5" fill="#f93434" />
+</svg>

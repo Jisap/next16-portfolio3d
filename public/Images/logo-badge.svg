@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" width="100%" height="100%">
+  <!-- Dark Rounded Container -->
+  <rect width="512" height="512" rx="100" fill="#111111" stroke="#262626" stroke-width="4" />
+  
+  <!-- Subtle Corner Accents / Screws -->
+  <circle cx="64" cy="64" r="5" fill="#2a2a2a" />
+  <circle cx="448" cy="64" r="5" fill="#2a2a2a" />
+  <circle cx="64" cy="448" r="5" fill="#2a2a2a" />
+  <circle cx="448" cy="448" r="5" fill="#2a2a2a" />
+  
+  <!-- Centered Logo Group -->
+  <g transform="translate(106, 176)">
+    <!-- Left Chevron / Triangle Indicator -->
+    <polygon points="0,20 52,60 0,100" fill="#f93434" />
+    
+    <!-- "AKA" Text Monogram -->
+    <text x="76" y="85" fill="#f2f2f2" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="82" letter-spacing="4">AKA</text>
+    
+    <!-- Accent Orange Underline -->
+    <rect x="76" y="108" width="220" height="9" rx="4.5" fill="#f93434" />
+  </g>
+</svg>
