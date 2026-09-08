@@ -427,6 +427,7 @@ const AboutSection = () => {
             <span>BUILDER · AI DEVELOPER · PROBLEM SOLVER</span>
           </div>
 
+          {/* Subtítulo */}
           <p className="eyebrow-text font-barlow-condensed text-xs sm:text-sm tracking-[.35rem] sm:tracking-[.5rem] uppercase text-orange font-bold">
             BACKGROUND &amp; PHILOSOPHY
           </p>
@@ -523,6 +524,7 @@ const AboutSection = () => {
                   <path ref={ribbonPathRef} d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
                 </svg>
               </div>
+
               <div>
                 <strong className="text-foreground font-semibold text-base block">
                   Computer Science &amp; Business Systems
@@ -559,6 +561,7 @@ const AboutSection = () => {
                 >
                   {stat.badge}
                 </span>
+
                 <div className="w-8 h-8 rounded-full border border-white/10 bg-white/[0.03] flex items-center justify-center text-foreground/40 group-hover:text-orange group-hover:border-orange/40 transition-all">
                   <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:rotate-[15deg]" />
                 </div>
@@ -574,12 +577,15 @@ const AboutSection = () => {
                 >
                   {stat.target}{stat.suffix}
                 </p>
+
                 <h4 className="text-base sm:text-lg font-bold font-barlow-condensed uppercase tracking-wider text-foreground mb-1">
                   {stat.label}
                 </h4>
+
                 <div className="inline-block px-2.5 py-0.5 rounded bg-orange/10 text-orange text-[10px] font-mono uppercase tracking-wider mb-2 font-medium">
                   {stat.subtitle}
                 </div>
+
                 <p className="text-xs text-foreground/50 font-mono leading-relaxed">
                   {stat.desc}
                 </p>
