@@ -9,7 +9,7 @@ const HeroSection = () => {
   const span2Ref = useRef<HTMLSpanElement>(null);
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between items-center text-center px-4 sm:px-6 pt-28 sm:pt-32 md:pt-36 lg:pt-[28vh] pb-6 sm:pb-8 overflow-hidden select-none">
+    <section className="relative z-10 w-full min-h-[100dvh] flex flex-col justify-between items-center text-center px-4 sm:px-6 pt-28 sm:pt-32 md:pt-36 lg:pt-[28vh] pb-6 sm:pb-8 overflow-hidden select-none">
       <div
         aria-hidden="true"
         className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[550px] md:w-[750px] h-[300px] bg-orange/[0.04] rounded-full blur-3xl pointer-events-none"

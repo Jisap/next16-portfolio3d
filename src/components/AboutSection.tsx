@@ -409,7 +409,7 @@ const AboutSection = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="relative w-full py-20 md:py-28 px-6 max-w-7xl mx-auto border-t border-white/5 overflow-hidden"
+      className="relative z-10 w-full py-20 md:py-28 px-6 max-w-7xl mx-auto border-t border-white/5 overflow-hidden"
     >
       {/* Luz ambiental decorativa de fondo */}
       <div className="pointer-events-none absolute top-12 left-1/2 -translate-x-1/2 w-[750px] h-[350px] bg-orange/5 blur-[120px] rounded-full" />
@@ -447,7 +447,7 @@ const AboutSection = () => {
             </h2>
           </ScrollRevealText>
 
-          <p className="subtitle-text max-w-2xl text-sm sm:text-base text-foreground/75 font-normal leading-relaxed">
+          <p className="subtitle-text max-w-2xl text-sm sm:text-base text-foreground font-normal leading-relaxed">
             Engineering intelligent systems, full-stack applications, and scalable products from first principles.
           </p>
         </div>

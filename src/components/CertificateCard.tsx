@@ -134,6 +134,7 @@ export default function CertificateCard({ cert }: { cert: CertificateItem }) {
           <h4 className="text-lg font-bold font-barlow-condensed tracking-wide uppercase text-foreground group-hover:text-orange transition-colors leading-snug">
             {cert.name}
           </h4>
+
           <p className="text-xs font-barlow-condensed tracking-wider uppercase text-foreground/60 mt-1">
             {cert.organizer}
           </p>
@@ -145,6 +146,7 @@ export default function CertificateCard({ cert }: { cert: CertificateItem }) {
             {cert.team && (
               <span>Team: <strong className="text-foreground/70">{cert.team}</strong></span>
             )}
+
             {cert.project && (
               <span>Project: <strong className="text-foreground/70">{cert.project}</strong></span>
             )}
@@ -168,6 +170,7 @@ export default function CertificateCard({ cert }: { cert: CertificateItem }) {
               <span className="truncate" title={cert.credentialId}>
                 ID: {cert.credentialId}
               </span>
+
               <button
                 onClick={() => handleCopyId(cert.credentialId!)}
                 className="text-foreground/50 hover:text-orange transition-colors p-0.5 cursor-pointer"

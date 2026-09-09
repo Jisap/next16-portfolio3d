@@ -65,7 +65,7 @@ const ExperienceTimeline = () => {
             <div
               className={`absolute -left-[31px] sm:-left-[39px] top-1 w-5 h-5 rounded-full border-2 bg-background flex items-center justify-center transition-colors ${item.isCurrent
                 ? "border-orange shadow-[0_0_12px_rgba(249,52,52,0.6)]" // Brillo naranja si es el rol actual
-                : "border-white/30 group-hover:border-orange" // Se ilumina al pasar el mouse sobre la tarjeta
+                : "border-white/30 group-hover:border-orange"         // Se ilumina al pasar el mouse sobre la tarjeta
                 }`}
             >
               {/* Punto interior */}
