@@ -1,5 +1,6 @@
 import AboutSection from '@/components/AboutSection'
 import CertificatesSection from '@/components/CertificatesSection'
+import ExperienceTimeline from '@/components/ExperienceTimeline'
 import HeroSection from '@/components/HeroSection'
 import ParticleCanvas from '@/components/ParticleCanvas'
 import ScrollImageSequence from '@/components/ScrollImageSequence'
@@ -80,6 +81,22 @@ const Home = () => {
           </div>
 
           <CertificatesSection />
+        </section>
+
+        {/* Experience & Timeline Section */}
+        <section id="experience" className="w-full py-20 px-6 max-w-7xl mx-auto border-t border-white/5">
+          <div className="flex flex-col items-center text-center gap-4 mb-14">
+            <p className="font-barlow-condensed text-xs sm:text-sm tracking-[.35rem] sm:tracking-[.5rem] uppercase text-orange font-bold">
+              TIMELINE & ROLES
+            </p>
+            <h2 className="text-3xl sm:text-5xl font-bigger-display uppercase tracking-wide text-foreground">
+              EXPERIENCE & SPRINT TRACKS
+            </h2>
+            <p className="max-w-xl text-sm sm:text-base text-foreground/70 font-normal">
+              Startup co-founding, competitive hackathon building sprints, and industry job simulations.
+            </p>
+          </div>
+          <ExperienceTimeline />
         </section>
       </div>
     </>
