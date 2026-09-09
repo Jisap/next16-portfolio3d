@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { getSortedExperience, ExperienceItem } from "@/data/experienceData";
+import { getSortedExperience, ExperienceItem } from "../../data/experienceData";
 import { Rocket, Trophy, Briefcase, Calendar, CheckCircle2 } from "lucide-react";
 
-export default function ExperienceTimeline() {
+const ExperienceTimeline = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const allExperiences = getSortedExperience();
 
@@ -34,8 +34,8 @@ export default function ExperienceTimeline() {
             key={cat}
             onClick={() => setSelectedCategory(cat)}
             className={`text-xs font-barlow-condensed tracking-widest uppercase font-semibold px-4 py-2 rounded-full border transition-all cursor-pointer ${selectedCategory === cat
-                ? "bg-orange text-background border-orange font-bold"
-                : "bg-white/5 text-foreground/70 border-white/10 hover:border-white/20 hover:text-white"
+              ? "bg-orange text-background border-orange font-bold"
+              : "bg-white/5 text-foreground/70 border-white/10 hover:border-white/20 hover:text-white"
               }`}
           >
             {cat}
@@ -50,8 +50,8 @@ export default function ExperienceTimeline() {
             {/* Timeline Bullet */}
             <div
               className={`absolute -left-[31px] sm:-left-[39px] top-1 w-5 h-5 rounded-full border-2 bg-background flex items-center justify-center transition-colors ${item.isCurrent
-                  ? "border-orange shadow-[0_0_12px_rgba(249,52,52,0.6)]"
-                  : "border-white/30 group-hover:border-orange"
+                ? "border-orange shadow-[0_0_12px_rgba(249,52,52,0.6)]"
+                : "border-white/30 group-hover:border-orange"
                 }`}
             >
               <div
@@ -118,3 +118,5 @@ export default function ExperienceTimeline() {
     </div>
   );
 }
+
+export default ExperienceTimeline;
