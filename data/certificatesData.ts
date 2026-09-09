@@ -42,7 +42,7 @@ export const certificatesData: CertificateItem[] = [
         team: "Kaalchakra",
         credentialId: "SCRS/2nd NextGen 2026/PC/NGH26_247",
         verificationUrl: "https://nextgen2026.thescrs.org/",
-        imagePath: "/Images/Certificates/nextgen-hackathon-2026.jpg",
+        imagePath: "/certificates/nextgen-hackathon-2026.jpg",
     },
     {
         id: "national-innovation-hackathon-2026",
@@ -53,7 +53,7 @@ export const certificatesData: CertificateItem[] = [
         result: "Participant",
         credentialId: "AMH202600353-M345",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/national-innovation-hackathon-2026.jpg",
+        imagePath: "/certificates/national-innovation-hackathon-2026.jpg",
     },
     {
         id: "iemhacks-4",
@@ -64,7 +64,7 @@ export const certificatesData: CertificateItem[] = [
         result: "Participant",
         team: "Kal ka naya yug",
         project: "JanSewa (Track 05: Social Issues)",
-        imagePath: "/Images/Certificates/iemhacks-4.jpg",
+        imagePath: "/certificates/iemhacks-4.jpg",
     },
     {
         id: "adobe-university-hackathon",
@@ -74,7 +74,7 @@ export const certificatesData: CertificateItem[] = [
         date: "9 Aug 2026",
         result: "Participant",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/adobe-university-hackathon.jpg",
+        imagePath: "/certificates/adobe-university-hackathon.jpg",
     },
     {
         id: "nexbuildon-hack-2026",
@@ -84,7 +84,7 @@ export const certificatesData: CertificateItem[] = [
         date: "17 Aug 2026",
         result: "Participant",
         credentialId: "NEX26-PART-0323",
-        imagePath: "/Images/Certificates/nexbuildon-hack-2026.jpg",
+        imagePath: "/certificates/nexbuildon-hack-2026.jpg",
     },
     {
         id: "hackforge-srijan-2026",
@@ -95,7 +95,7 @@ export const certificatesData: CertificateItem[] = [
         result: "Finalist",
         team: "Team UdyamX",
         project: "VeriFund",
-        imagePath: "/Images/Certificates/hackforge-srijan-2026.png",
+        imagePath: "/certificates/hackforge-srijan-2026.png",
     },
     {
         id: "model-forge",
@@ -106,7 +106,7 @@ export const certificatesData: CertificateItem[] = [
         result: "Participant",
         team: "Tensor Titans",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/model-forge.jpg",
+        imagePath: "/certificates/model-forge.jpg",
     },
     {
         id: "ideatex-session-zero-2026",
@@ -117,7 +117,7 @@ export const certificatesData: CertificateItem[] = [
         result: "Top 50 Finalist",
         team: "Zenforge",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/ideatex-session-zero-2026.jpg",
+        imagePath: "/certificates/ideatex-session-zero-2026.jpg",
     },
     {
         id: "mlx-session-zero-2026",
@@ -127,7 +127,7 @@ export const certificatesData: CertificateItem[] = [
         date: "29 May 2026",
         result: "Participant",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/mlx-session-zero-2026.jpg",
+        imagePath: "/certificates/mlx-session-zero-2026.jpg",
     },
     {
         id: "vibe-with-india-2",
@@ -136,7 +136,7 @@ export const certificatesData: CertificateItem[] = [
         organizer: "HackWithIndia (via Devnovate)",
         date: "20 Mar 2026",
         result: "Participant",
-        imagePath: "/Images/Certificates/vibe-with-india-2.jpg",
+        imagePath: "/certificates/vibe-with-india-2.jpg",
     },
     {
         id: "hult-prize-2026",
@@ -146,7 +146,7 @@ export const certificatesData: CertificateItem[] = [
         date: "30 Jan 2026",
         result: "Participant",
         project: "KidGuides",
-        imagePath: "/Images/Certificates/hult-prize-2026.jpg",
+        imagePath: "/certificates/hult-prize-2026.jpg",
     },
     {
         id: "ace-the-case-srijan-2026",
@@ -155,7 +155,7 @@ export const certificatesData: CertificateItem[] = [
         organizer: "F.E.T.S.U. Presents Srijan '26 / IIC, JU E-Cell",
         date: "Apr 2026",
         result: "Finalist",
-        imagePath: "/Images/Certificates/ace-the-case-srijan-2026.jpg",
+        imagePath: "/certificates/ace-the-case-srijan-2026.jpg",
     },
 
     // --- Job Simulations ---
@@ -166,7 +166,7 @@ export const certificatesData: CertificateItem[] = [
         organizer: "Goldman Sachs (via Forage)",
         date: "25 Jun 2026",
         result: "Completed",
-        imagePath: "/Images/Certificates/goldman-sachs-risk-simulation.jpg",
+        imagePath: "/certificates/goldman-sachs-risk-simulation.jpg",
     },
     {
         id: "tata-genai-data-analytics-simulation",
@@ -175,7 +175,7 @@ export const certificatesData: CertificateItem[] = [
         organizer: "Tata (via Forage)",
         date: "25 Jun 2026",
         result: "Completed",
-        imagePath: "/Images/Certificates/tata-genai-data-analytics-simulation.jpg",
+        imagePath: "/certificates/tata-genai-data-analytics-simulation.jpg",
     },
 
     // --- Quizzes ---
@@ -186,7 +186,7 @@ export const certificatesData: CertificateItem[] = [
         organizer: "NISM (SEBI initiative)",
         date: "2026",
         result: "Participant",
-        imagePath: "/Images/Certificates/national-financial-literacy-quiz-2026.jpg",
+        imagePath: "/certificates/national-financial-literacy-quiz-2026.jpg",
     },
     {
         id: "hacktherank-quiz",
@@ -196,7 +196,7 @@ export const certificatesData: CertificateItem[] = [
         date: "2026",
         result: "Participant",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/hacktherank-quiz.jpg",
+        imagePath: "/certificates/hacktherank-quiz.jpg",
     },
     {
         id: "vande-mataram-150-quiz",
@@ -205,7 +205,7 @@ export const certificatesData: CertificateItem[] = [
         organizer: "Ministry of Culture & MyGov",
         date: "2026",
         result: "Participant",
-        imagePath: "/Images/Certificates/vande-mataram-150-quiz.png",
+        imagePath: "/certificates/vande-mataram-150-quiz.png",
     },
     {
         id: "data-sprint-2026",
@@ -215,7 +215,7 @@ export const certificatesData: CertificateItem[] = [
         date: "2026",
         result: "Participant",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/data-sprint-2026.jpg",
+        imagePath: "/certificates/data-sprint-2026.jpg",
     },
     {
         id: "ice-breaker-5",
@@ -225,7 +225,7 @@ export const certificatesData: CertificateItem[] = [
         date: "22 Mar 2026",
         result: "Participant",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/ice-breaker-5.jpg",
+        imagePath: "/certificates/ice-breaker-5.jpg",
     },
 
     // --- Workshops ---
@@ -237,7 +237,7 @@ export const certificatesData: CertificateItem[] = [
         date: "8 Mar 2026",
         result: "Completed",
         isQrVerifiable: true,
-        imagePath: "/Images/Certificates/ai-tools-workshop-be10x.jpg",
+        imagePath: "/certificates/ai-tools-workshop-be10x.jpg",
     },
 
     // --- Courses ---
@@ -249,7 +249,7 @@ export const certificatesData: CertificateItem[] = [
         date: "2026",
         result: "Completed",
         credentialId: "6a3d4bc3ed172e4a2b02ad9a",
-        imagePath: "/Images/Certificates/prime-aiml-course.png",
+        imagePath: "/certificates/prime-aiml-course.png",
     },
     {
         id: "financial-freedom-batch-15",
@@ -259,7 +259,7 @@ export const certificatesData: CertificateItem[] = [
         date: "Started 15 Nov 2025",
         result: "Completed",
         credentialId: "S2W-FF15-SAPPHIRE-2026",
-        imagePath: "/Images/Certificates/financial-freedom-batch-15.jpg",
+        imagePath: "/certificates/financial-freedom-batch-15.jpg",
     },
 ];
 
